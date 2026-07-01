@@ -2,9 +2,13 @@
 This project predicts median house prices using the California Housing dataset. It uses a machine learning pipeline with preprocessing and a Random Forest Regressor to ensure consistent training and inference.
 
 📊 Model Performance
+
 RMSE: 49,101.03
+
 MSE: 2,410,911,309.34
+
 R² Score: 0.8177
+
 The model explains ~81% of the variance in housing prices, showing good predictive performance.
 
 ⚙️ Project Workflow
@@ -42,7 +46,7 @@ Joblib
 📈 Future Improvements
 
 Hyperparameter tuning (GridSearchCV / RandomizedSearchCV)
-Try XGBoost / LightGBM for better accuracy
+XGBoost / LightGBM for better accuracy
 Feature engineering (location clustering)
 Deploy using Flask / FastAPI
 
