@@ -1,52 +1,34 @@
-🏡 California Housing Price Prediction
-This project predicts median house prices using the California Housing dataset. It uses a machine learning pipeline with preprocessing and a Random Forest Regressor to ensure consistent training and inference.
+California House Price Prediction
 
-📊 Model Performance
+This project predicts California house prices using Machine Learning. The model is trained on the California Housing dataset and learns the relationship between housing features and median house values.
 
-RMSE: 49,101.03
+Features
 
-MSE: 2,410,911,309.34
+- Data preprocessing and cleaning
+- Exploratory Data Analysis (EDA)
+- Feature scaling and model training
+- House price prediction
+- Model evaluation using R² Score and RMSE
 
-R² Score: 0.8177
+Technologies Used
 
-The model explains ~81% of the variance in housing prices, showing good predictive performance.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
 
-⚙️ Project Workflow
+Model
 
+- Random Forest Regressor
 
-Load dataset (housing.csv)
+Results
 
-Create income-based stratified split (income_cat)
+The trained model achieved an R² Score of 0.81, demonstrating good predictive performance on unseen data.
 
-Split data into training and test sets
+Future Improvements
 
-Preprocess data:
-
-Numerical: median imputation + scaling
-
-Categorical: One-Hot Encoding (ocean_proximity)
-
-Build preprocessing pipeline using ColumnTransformer
-
-Train RandomForestRegressor model
-
-Evaluate model using RMSE, MSE, and R² score
-
-Save trained model and pipeline using joblib
-
-Run inference on new data and export predictions to output.csv
-
-🧠 Tech Stack:
-
-Python
-Pandas, NumPy
-Scikit-learn
-Joblib
-
-📈 Future Improvements
-
-Hyperparameter tuning (GridSearchCV / RandomizedSearchCV)
-XGBoost / LightGBM for better accuracy
-Feature engineering (location clustering)
-Deploy using Flask / FastAPI
-
+- Hyperparameter tuning
+- Feature engineering
+- Model comparison with XGBoost and Gradient Boosting
+- Streamlit deployment for a user-friendly interface
