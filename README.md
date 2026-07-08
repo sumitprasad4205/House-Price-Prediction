@@ -1,34 +1,26 @@
-California House Price Prediction
 
-This project predicts California house prices using Machine Learning. The model is trained on the California Housing dataset and learns the relationship between housing features and median house values.
+## 🏠 House Price Prediction Model
 
-Features
+This project evaluates and compares different machine learning regression models to predict housing prices. By leveraging ensemble learning and hyperparameter tuning, the project aims to minimize prediction error and maximize variance explanation ($R^2$).
 
-- Data preprocessing and cleaning
-- Exploratory Data Analysis (EDA)
-- Feature scaling and model training
-- House price prediction
-- Model evaluation using R² Score and RMSE
+## 🚀 Model Performance Summary
 
-Technologies Used
+A comparative analysis was conducted across three model configurations: **Random Forest**, **XGBoost**, and a **Hyperparameter-Tuned XGBoost**.
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
+| Model | $R^2$ Score | RMSE | MSE |
+| --- | --- | --- | --- |
+| **Tuned XGBoost** | **0.842** | **45,525.51** | **2,072,580,861.50** |
+| XGBoost Regressor | 0.829 | 47,350.72 | 2,242,090,716.72 |
+| Random Forest Regressor | 0.817 | 48,941.70 | 2,395,290,032.47 |
 
-Model
+### Key Takeaways
 
-- Random Forest Regressor
+* **Best Performer:** The **Tuned XGBoost** model achieved the highest accuracy, explaining **84.2%** of the variance in house prices ($R^2 = 0.842$) with the lowest error rates.
+* **Error Reduction:** Hyperparameter tuning successfully reduced the Root Mean Squared Error (RMSE) by approximately **$1,825** compared to the baseline XGBoost model.
 
-Results
+---
 
-The trained model achieved an R² Score of 0.81, demonstrating good predictive performance on unseen data.
+## 🛠️ Tech Stack
 
-Future Improvements
-
-- Hyperparameter tuning
-- Feature engineering
-- Model comparison with XGBoost and Gradient Boosting
-- Streamlit deployment for a user-friendly interface
+* **Language:** Python
+* **Libraries:** `pandas`, `scikit-learn`, `xgboost`
